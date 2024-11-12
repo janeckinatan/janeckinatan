@@ -1,141 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl-PL">
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,initail-scale=1.0"/>
 <head>
-  <title>Formularz</title>
+<title>formularz </title>
 </head>
 <body>
+	<div style="background-color:grey;">
+		<h1><center>PSI-Natan Janecki</center></h1>
+	</div>
+	<div style="float:left; width:30%; height:550px;">
+		<h3>HTML</h3>
+				<a href="kolory.html">KOLORY</a></br>
+				<a href="nauczyciele.html">NAUCZYCIELE</a></br>
+				<a href="zdjecia.html">ZDJĘCIA</a></br>
+				<a href="tabele.html">TABELA</a></br>
+				<a href="tabela_janecki.html">TABELA NA OCENE</a></br>
+				<a href="listy.html">LISTY</a></br>
+				<a href="janecki_lista.html">LISTY NA OCENE</a></br>
+				<a href="mapy.html">MAPY</a></br>
+				<a href="formularz.html">FORMULARZ</a><br />
+	</div>
+	<div style="float:right; width:68%; background-color=red">
+<form action="mailto:natan.janecki@zspm.edu.pl" method="post" enctype="text/plain"><div>
+<span style="color:blue">
+<input name="Imię">Podaj swoje imię<br>
+<input name="Nazwisko">Podaj swoje nazwisko
+<p>Podaj swoją płeć:</p>
+<input type="radio" name="Płeć" value="Kobieta">Kobieta
+<input type="radio" name="Płeć" value="Mężczyzna">Mężczyzna
+<input type="radio" name="Płeć" value="gej">gej
+<input type="radio" name="Płeć" value="radziecki">radziecki
+<input type="radio" name="Płeć" value="helikopter bojowy">helikopter bojowy
+<p>Ile masz lat?</p>
+<input type="radio" name="Wiek" value="mniej niż 15">mniej niż 15<br>
+<input type="radio" name="Wiek" value="15">15<br>
+<input type="radio" name="Wiek" value="16">16<br>
+<input type="radio" name="Wiek" value="17">17<br>
+<input type="radio" name="Wiek" value="18">18<br>
+<input type="radio" name="Wiek" value="więcej niż 18">więcej niż 18
+<p>Jakie są twoje ulubione zespoły f1 (możesz zaznaczyć więcej możliwości)?</p>
+<input type="checkbox" name="f1" value="ferrari">ferrari<br>
+<input type="checkbox" name="f1" value="red bull">red bull<br>
+<input type="checkbox" name="f1" value="mclaren">mclaren<br>
+<input type="checkbox" name="f1" value="aston martin">aston martin<br>
+<input type="checkbox" name="f1" value="mercedes">mercedes<br>
+<input type="checkbox" name="f1" value="Inna">Inna (podaj jaka):
+<input name="f1">
+<p>Jakiej przeglądarki internetowej używasz?</p>
+<select name="Przeglądarka">
+	<option selected>Chrome</option>
+	<option>Brave</option>
+	<option>Opera GX</option>
+    <option>Opera</option>
+	<option>Inna</option>
+</select>
+<p>Jakie znasz gry?</p>
+<select name="gry" multiple size="3">
+	<option selected>f1 24</option>
+	<option>dead by daylight</option>
+	<option>fortnite</option>
+	<option>Inny</option>
+</select>
+<p>Podaj swój komentarz:</p>
+<textarea name="Komentarz" cols="50" rows="10"></textarea>
+<p>jaki klub jest najlepszy?</p>
+<input type="image" name="gks" src="foty/OIP4.png"/>
+<p>etykieta<label for="pole"> imię:</label><input type="text" od="pole" size="30" maxlenght="40"> </p>
+<br><br><br>
+<input type="submit" value="Wyślij formularz">
+<input type="reset" value="Wyczyść dane">
+</div></span>
 
-  <h1>Formularz</h1>
-
-  <form>
-    <label for="imie">Imię i Nazwisko:</label>
-    <input type="text" id="imie" name="imie"><br><br>
-
-    <label for="email">Adres email:</label>
-    <input type="email" id="email" name="email"><br><br>
-
-    <label for="haslo">Hasło:</label>
-    <input type="password" id="haslo" name="haslo"><br><br>
-
-    <label for="plec">Płeć:</label><br>
-    <input type="radio" id="plec_m" name="plec" value="Mężczyzna">
-    <label for="plec_m">Mężczyzna</label><br>
-    <input type="radio" id="plec_k" name="plec" value="Kobieta">
-    <label for="plec_k">Kobieta</label><br><br>
-
-    <label for="plec_etykieta">Płeć (z etykietą):</label><br>
-    <select id="plec_etykieta" name="plec_etykieta">
-      <option value="Mężczyzna">Mężczyzna</option>
-      <option value="Kobieta">Kobieta</option>
-    </select><br><br>
-
-    <label for="jezyki">Języki, które znasz:</label><br>
-    <input type="checkbox" id="jezyk_ang" name="jezyki" value="ANG">
-    <label for="jezyk_ang">ANG</label><br>
-    <input type="checkbox" id="jezyk_nie" name="jezyki" value="NIE">
-    <label for="jezyk_nie">NIE</label><br>
-    <input type="checkbox" id="jezyk_chn" name="jezyki" value="CHN">
-    <label for="jezyk_chn">CHN</label><br><br>
-
-    <label for="owoce">Ulubione owoce:</label><br>
-    <input type="checkbox" id="owoce_truskawki" name="owoce" value="Truskawki">
-    <label for="owoce_truskawki">Truskawki</label><br>
-    <input type="checkbox" id="owoce_banany" name="owoce" value="Banany">
-    <label for="owoce_banany">Banany</label><br>
-    <input type="checkbox" id="owoce_maliny" name="owoce" value="Maliny">
-    <label for="owoce_maliny">Maliny</label><br><br>
-
-    <label for="przegladarka">Przeglądarka:</label><br>
-    <select id="przegladarka" name="przegladarka">
-      <option value="Chrome">Chrome</option>
-      <option value="Firefox">Firefox</option>
-      <option value="Safari">Safari</option>
-      <option value="Edge">Edge</option>
-    </select><br><br>
-
-    <input type="submit" value="Wyślij">
-    <br><br>
-
-    <label for="dni">Dni wolne/robocze:</label><br>
-    <input type="checkbox" id="dni_wolne" name="dni" value="Sobota">
-    <label for="dni_wolne">Sobota</label><br>
-    <input type="checkbox" id="dni_wolne" name="dni" value="Niedziela">
-    <label for="dni_wolne">Niedziela</label><br>
-    <input type="checkbox" id="dni_robocze" name="dni" value="Poniedziałek">
-    <label for="dni_robocze">Poniedziałek</label><br>
-    <input type="checkbox" id="dni_robocze" name="dni" value="Wtorek">
-    <label for="dni_robocze">Wtorek</label><br>
-    <input type="checkbox" id="dni_robocze" name="dni" value="Środa">
-    <label for="dni_robocze">Środa</label><br>
-    <input type="checkbox" id="dni_robocze" name="dni" value="Czwartek">
-    <label for="dni_robocze">Czwartek</label><br>
-    <input type="checkbox" id="dni_robocze" name="dni" value="Piątek">
-    <label for="dni_robocze">Piątek</label><br><br>
-
-    <textarea name="adres" id="adres">Jan Niezbędny
-    ul. Nieznana 3
-    40-001 Katowice
-    Polska</textarea><br><br>
-
-    <input type="text" name="adres_wprowadz" placeholder="Wprowadź adres" id="adres_wprowadz"><br><br>
-
-    <input type="reset" value="Resetuj">
-    <input type="button" value="Opuść stronę">
-    <input type="button" value="Kup teraz" onclick="alert('Zakupiono!');">
-    <br><br>
-
-    <input type="file" id="plik" name="plik">
-    <span id="plik_nazwa"></span>
-    <br><br>
-
-    <label for="wyksztalcenie">Wykształcenie:</label><br>
-    <input type="radio" id="wyksztalcenie_podstawowe" name="wyksztalcenie" value="Podstawowe" alt="P">
-    <label for="wyksztalcenie_podstawowe">Podstawowe</label><br>
-    <input type="radio" id="wyksztalcenie_srednie" name="wyksztalcenie" value="Średnie" alt="S">
-    <label for="wyksztalcenie_srednie">Średnie</label><br>
-    <input type="radio" id="wyksztalcenie_wyzsze" name="wyksztalcenie" value="Wyższe" alt="W">
-    <label for="wyksztalcenie_wyzsze">Wyższe</label><br>
-    <br>
-<a href="#" onclick="alert('Kliknij!');"><img src="1.png" alt="Przycisk"></a>
-
-
-
-    <input type="text" name="pole1" autofocus><br>
-    <input type="text" name="pole2" autocomplete="on"><br>
-    <input type="text" name="pole3" autocomplete="off" list="jezyki_lista">
-    <datalist id="jezyki_lista">
-      <option value="Angielski">
-      <option value="Niemiecki">
-    </datalist><br><br>
-
-    <input type="submit" value="Wyślij" onclick="alert('Wysłano!');"><br><br>
-
-    <input type="email" name="email_poprawny" placeholder="Wprowadź poprawny email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br><br>
-
-    <input type="url" name="url" placeholder="Wprowadź adres URL" required pattern="https://[a-z0-9.-]+\.[a-z]{2,}$"><br><br>
-
-    <input type="number" name="liczba" min="0" max="100"><br><br>
-
-    <input type="date" name="data"><br><br>
-
-    <input type="color" name="kolor"><br><br>
-
-    Element wyjsciowy przedstawia wynik obliczenia <br/>
-<form
-oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-  0
-  <input type="range" id="a" name="a" value="50">
-  100 +
-  <input type="number" id="b" name="b" value="50">
-  =
-  <output name="x" for="a b"></output>
-  <br><br>
-  <input type="submit">
-</form>
-
-
-    <input type="text" name="odpowiedz" value="Natan" readonly><br><br>
-  </form>
-
+	<div style="background-color:grey;clear:both;">
+		<center> &copy; N.J., October 2024</center>
+	</div>
 </body>
 </html>

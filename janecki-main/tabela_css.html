@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tabela</title>
+<link rel="stylesheet" type="text/css" href="tabela_css.css">
+</head>
+<style>
+    table.zero, td.zero {
+    border: 3px solid blue;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 40%;
+  }
+  
+  table.one {
+    width: 80%;
+    border-collapse: collapse;
+  }
+  
+  th.one {
+    border: 3px solid red;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: lightblue;
+  }
+  
+  td.one {
+    border: 3px solid rgb(113, 255, 113);
+    padding: 10px;
+    background-color: rgb(255, 255, 133);
+  }
+  
+  table.dwa, td.dwa, th.dwa {
+    border-collapse: collapse;
+    width: 80%;
+    border-top: 1px solid aqua;
+    padding: 8px;
+  }
+  th.dwa, td.dwa {
+  }
+  th.dwa, td.dwa:hover {
+    background-color: aqua;
+  }
+</style>
+<body>
+
+<table class="zero">
+  <tr>
+    <td class="zero">komórka 1-1</td>
+    <td class="zero">komórka 1-2</td>
+    <td class="zero">komórka 1-3</td>
+  </tr>
+  <tr>
+    <td class="zero">komórka 2-1</td>
+    <td class="zero">komórka 2-2</td>
+    <td class="zero">komórka 2-3</td>
+  </tr>
+  <tr>
+    <td class="zero">komórka 3-1</td>
+    <td class="zero">komórka 3-2</td>
+    <td class="zero">komórka 3-3</td>
+  </tr>
+</table>
+<br>
+<table class="one">
+  <tr>
+    <th class="one">nr</th>
+    <th class="one">nazwisko i imie</th>
+    <th class="one">obecnosc</th>
+  </tr>
+  <tr>
+    <td class="one">1</td>
+    <td class="one">Anna Nowak</td>
+    <td class="one">tak</td>
+  </tr>
+  <tr>
+    <td class="one">2</td>
+    <td class="one">Jan Kowalski</td>
+    <td class="one">tak</td>
+  </tr>
+  <tr>
+    <td class="one">3</td>
+    <td class="one">Krzysztof Kwiatkowski</td>
+    <td class="one">tak</td>
+  </tr>
+  <tr>
+    <td class="one">4</td>
+    <td class="one">Filip</td>
+    <td class="one"></td>
+  </tr>
+  <tr>
+    <td class="one">5</td>
+    <td class="one">Maja</td>
+    <td class="one"></td>
+  </tr>
+</table>
+<br>
+<table class="dwa">
+  <tr>
+    <th class="dwa">Pierwsze Imię</th>
+    <th class="dwa">Nazwisko</th>
+    <th class="dwa">Zarobek na godz.</th>
+  </tr>
+  <tr>
+    <td class="dwa">Peter</td>
+    <td class="dwa">Griffin</td>
+    <td class="dwa">$100</td>
+  </tr>
+  <tr>
+    <td class="dwa">Lois</td>
+    <td class="dwa">Griffin</td>
+    <td class="dwa">$150</td>
+  </tr>
+  <tr>
+    <td class="dwa">Joe</td>
+    <td class="dwa">Swanson</td>
+    <td class="dwa">$300</td>
+  </tr>
+  <tr>
+    <td class="dwa">Cleveland</td>
+    <td class="dwa">Brown</td>
+    <td class="dwa">$250</td>
+  </tr>
+
+<table class="trzy">
+  <tr>
+    <th class="trzy">Pierwsze Imię</th>
+    <th class="trzy">Nazwisko</th>
+    <th class="trzy">Zarobek na godz.</th>
+  </tr>
+  <tr>
+    <td class="trzy">Peter</td>
+    <td class="trzy">Griffin</td>
+    <td class="trzy">$100</td>
+  </tr>
+  <tr>
+    <td class="trzy">Lois</td>
+    <td class="trzy">Griffin</td>
+    <td class="trzy">$150</td>
+  </tr>
+  <tr>
+    <td class="trzy">Joe</td>
+    <td class="trzy">Swanson</td>
+    <td class="trzy">$300</td>
+  </tr>
+  <tr>
+    <td class="trzy">Cleveland</td>
+    <td class="trzy">Brown</td>
+    <td class="trzy">$250</td>
+  </tr>
+</table>
+
+</table>
+</body>
+</html>
+

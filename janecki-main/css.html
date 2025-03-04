@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html><head>
+    <title> Właściwości CSS </title>
+    <style type="text/css">
+    p {
+        font-family:"Courier New";
+        font-style:italic;
+        font-weight: 500;
+        font-size:20px;
+        color: maroon;
+    }
+    blockquote {
+        font-family: "fantasy";
+        font-style: italic;
+        font-weight: bolder;
+        font-size: 30px;
+        font-variant: small-caps;
+        color: teal;
+    }
+    em {
+    font-family:"Courier New";
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: underline;
+    color: blue;
+}
+
+h3 {
+  text-decoration: underline;
+  text-align: left;
+  color: red;
+  text-transform: uppercase;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  word-spacing: 15px;
+}
+h4 {
+  text-decoration: underline;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  word-spacing: 15px;
+}
+body {
+  background-image: url(foty/tlo.png);
+  background-attachment: fixed;
+  background-repeat: repeat-x;
+  background-position: 0% 10%;
+}
+    #obramowanie1 {
+        border-style: dashed;
+        border-color: aqua;
+        border-width: medium;
+        width: 40%;
+    }
+    h2 {
+        border-style: dashed;
+        border-color: aqua;
+        border-width: medium;
+        background-color: yellow;
+    }
+    .zadanie1 {
+        color: silver;
+        background-color: yellow;
+        border: solid rgba(180, 180, 180, 0.11);
+        border-style: ridge;
+        text-transform: uppercase;
+        text-align: right;
+        text-decoration: none;
+    }
+    #zadanie2 {
+        text-decoration: underline;
+        letter-spacing: 5pt;
+        text-align: center;
+        color: white;
+        background-color: fuchsia;
+        border: 3px dotted white;
+        border-style: inset;
+        margin: 20px;
+        width: 70%;
+    }
+    #zadanie3 {
+        text-decoration: underline;
+        letter-spacing: 5pt;
+        text-align: center;
+        color: white;
+        background-color: fuchsia;
+        border: 3px dotted white;
+        border-style: inset;
+        margin: 20px;
+        width: 70%;
+    }
+    .zadanie5 {
+        border: 5px double rgb(0, 0, 0);
+        background-color: rgb(251, 255, 0);
+        padding: 20px;
+        text-align: justify;
+    }
+    #ramka1 {
+        background-color: white;
+        color: black;
+        padding: 10px;
+        width: 70%;
+        border: 30px solid transparent;
+        border-image: url(foty/ramka.png) 50 stretch;
+    }
+    #ramka2 {
+        background-color: white;
+        color: black;
+        padding: 10px;
+        width: 70%;
+        border: 30px solid transparent;
+        border-image: url(foty/ramka.png) 50 round;
+    }
+    #ramka3 {
+    background-color: transparent;
+    color: black;
+    padding: 5px;
+    width: 15%;
+    border: 50px solid;
+    border-image: url(foty/gwiazdka1.gif) 100 round;
+    text-align:center; 
+    line-height: 1.2; 
+}
+#ramka3a {
+    background-color: transparent;
+    color: black;
+    padding: 5px;
+    width: 15%;
+    border: 50px solid;
+    border-image: url(foty/gwiazdka1.gif) 30 round;
+    text-align: center;
+    line-height: 1.2;
+}
+    </style>
+    <h3>ZADANIE 1 - CZCIONKA </h3><br />
+    <p>Formatowanie akapitu p: czcionka - Courier New, styl - pochylenie, grubość - 500, rozmiar - 20 px, kolor - maroon</p>
+    <h3>ZADANIE 1A - CZCIONKA</h3><br />
+    <blockquote>Formatowanie blockquote: krój czcionki – fantasy, styl – pochylenie,<br/>
+        grubość – bolder, rozmiar – 30px, typ czcionki - kapitaliki, kolor - teal </blockquote>
+        <h3>ZADANIE 1B - CZCIONKA<br />
+    <em>Formatowanie (wyróżnionego tekstu - wypuklenia) EM: dowolne </em>
+    <h3>ZADANIE III - TŁO</h3>
+    <div id="obramowanie1">
+        <h3 class="zadanie1">zadanie IV – OBRAMOWANIE:
+            Ustawienie obr. dla h2: styl – kreskowanie, kolor obr. – aqua, grubość - średnia, tło żółte
+            </h3>
+    </div>
+    <h2 style="background-color: black; color: gray;">KOLOR TEKSTU: SREBRNY, CZARNE TŁO, ŻÓŁTE OBRAMOWANIE, STYL OBRAMOWANIA: RIDGE, DUŻE LITERY / KAPITALIKI, TEKST USTAWIONY: DO PRAWEJ, BRAK DEKORACJI</h2>
+
+    <h3 id="zadanie2">TEKST NAKREŚLONY, ODSTĘPY MIĘDZY ZNAKAMI W TEKŚCIE 5 PT, WYŚRODKOWANY TEST, KOLOR TEKSTU BIAŁY, TŁO FUCHSIA, OBRAMOWANIE 3PX KROPOWANE BĄDŹ INSET BIAŁE, ODSTĘP 20 PX, SZEROKOŚĆ 70%</h3>
+    <h3 id="zadanie3">TEKST NAKREŚLONY, ODSTĘPY MIĘDZY ZNAKAMI W TEKŚCIE 5 PT, WYŚRODKOWANY TEST, KOLOR TEKSTU BIAŁY, TŁO FUCHSIA, OBRAMOWANIE 3PX KROPOWANE BĄDŹ INSET BIAŁE, ODSTĘP 20 PX, SZEROKOŚĆ 70%</h3>
+    <div class="zadanie5">
+        <h4><center>ZADANADNIE DODATKOWE</center></h4>
+    </div>
+    <h2 id="ramka1">Zadanie 6 - Ustawienie obramowania obrazkowego dla nagłówka h2 - z identyfikatorem "ramka1"</h2>
+    <h2 id="ramka2">Zadanie IV – OBRAMOWANIE: Ustawienie obramowania obrazkowego dla nagłówka h2 - z identyfikatorem "ramka2"</h2>
+    <h2 id="ramka3">zadanie IV –<br>OBRAMOWANIE:<br>
+        Ustawienie obramowania<br> obrazkowego dla<br> nagłówka h2 - z<br> identyfikatorem<br> "ramka3"<br>
+        TŁO: none; TEKST:<br> czarny, ODSTĘP: 5px,<br> SZEROKOŚĆ: 33%;<br> border: 50 px solid;<br>
+        border-image:<br> url(foty/gwiazdka1.gif)<br> 100 round;</h2>
+
+    <h2 id="ramka3a">zadanie IV –<br> OBRAMOWANIE:<br>
+        Ustawienie obramowania<br> obrazkowego dla<br> nagłówka h2 - z<br> identyfikatorem<br> "ramka3a"<br>
+        TŁO: none; TEKST:<br> czarny, ODSTĘP: 5px,<br> SZEROKOŚĆ: 33%;<br> border: 50 px<br> solid;<br>
+        border-image:<br> url(foty/gwiazdka1.gif)<br> 30 round;</h2>
+
+    
+
+</head>
+<body>
